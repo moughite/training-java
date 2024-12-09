@@ -34,7 +34,7 @@ public class ExCollections {
                 ));
     }
 
-    private Map<String,Integer> convertList() {
+    public Map<String,Integer> convertList() {
         List<String> list = Arrays.asList("moughite", "sanae", "jawad", "malika");
 
         return list.stream().collect(Collectors.toMap(
@@ -47,11 +47,11 @@ public class ExCollections {
         return name.substring(0,1).toUpperCase()+name.substring(1,name.length()-1)+name.substring(name.length()-1).toUpperCase();
     }
 
-    private List<Integer> nbImpaire() {
+    public Set<Integer> nbImpaire() {
 
         List<Integer> list = Arrays.asList(3, 5, 7, 4, 8, 1);
 
-        return list.stream().filter(val->val%2!=0).collect(Collectors.toList());
+        return list.stream().filter(val->val%2!=0).collect(Collectors.toSet());
     }
 
 

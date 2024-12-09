@@ -12,19 +12,21 @@ public class ExCollectionsTest {
     @Test
     public void testNbImpaire(){
         Set<Integer> result = exCollections.nbImpaire();
-        HashSet<Integer> expected = new HashSet<>(Arrays.asList(67, 5));
+        HashSet<Integer> expected = new HashSet<>(Arrays.asList(1, 3, 5, 7));
         assertEquals(result,expected);
-        assertEquals(2,result.size());
+        assertEquals(4,result.size());
     }
 
     @Test
     public void testConvertList(){
         Map<String, Integer> result = exCollections.convertList();
         Map<String,Integer> expected=new HashMap<>();
-        expected.put("Mohamed",7);
-        expected.put("Jawad",5);
-        expected.put("Moughite",8);
-        expected.put("Sanae",5);
+
+        expected.put("JawaD",5);
+        expected.put("MoughitE",8);
+        expected.put("MalikA",6);
+        expected.put("SanaE",5);
+
 
         assertEquals(result,expected);
         assertEquals(4,result.size());
